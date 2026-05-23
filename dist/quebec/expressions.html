@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Québec — Expressions</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #FFFFFF;
+    --sidebar-bg: #F2F2F2;
+    --border: #DCDCDC;
+    --text: #111111;
+    --text-muted: #888888;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--sidebar-bg);
+    color: var(--text);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  header {
+    background: var(--bg);
+    padding: 0.75rem 2rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+    border-bottom: 2px solid var(--text);
+    flex-shrink: 0;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--text);
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+  }
+
+  header a {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s, color 0.15s;
+  }
+
+  header a:hover { color: var(--text); border-bottom-color: var(--text); }
+
+  header a.active {
+    color: var(--text);
+    font-weight: 700;
+    border-bottom: 2px solid var(--text);
+  }
+
+  .content {
+    flex: 1;
+    min-height: 0;
+    padding: 0.75rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+  }
+
+  .expr {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.55rem 0.85rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    overflow: hidden;
+  }
+
+  .expr-word {
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  .expr-fr {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .expr-fr::before {
+    content: '→';
+    font-weight: 400;
+    color: var(--border);
+  }
+
+  .expr-desc {
+    font-size: 0.76rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+    margin-top: 1px;
+  }
+
+  .expr-badge {
+    display: inline-block;
+    background: var(--text);
+    color: #fff;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-top: 3px;
+    align-self: flex-start;
+  }
+
+  .expr-badge.warn {
+    background: #888;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="../index.html" style="font-size: 1.5rem; color:black">←</a>
+  <h1>Québec</h1>
+  <a href="index.html">Carte</a>
+  <a href="tips.html">Tips</a>
+  <a href="expressions.html" class="active">Expressions</a>
+</header>
+
+<div class="content">
+
+  <div class="expr">
+    <div class="expr-word">Char</div>
+    <div class="expr-fr">Voiture</div>
+    <div class="expr-desc">« Mon char est dans l'parking. » Désigne n'importe quelle voiture.</div>
+  </div>
+
+  <div class="expr">
+    <div class="expr-word">Chandail</div>
+    <div class="expr-fr">T-shirt / Pull</div>
+    <div class="expr-desc">Désigne aussi bien un t-shirt qu'un sweat. « Mets ton chandail, il fait frette. »</div>
+  </div>
+
+  <div class="expr">
+    <div class="expr-word">Chum</div>
+    <div class="expr-fr">Copain / Ami</div>
+    <div class="expr-desc">Peut être un ami proche ou le petit-ami selon le contexte. « Mon chum m'a appelé. »</div>
+  </div>
+
+  <div class="expr">
+    <div class="expr-word">Crisse</div>
+    <div class="expr-fr">Juron (Christ)</div>
+    <div class="expr-desc">Juron québécois dérivé de « Christ ». Utilisé comme intensificateur. À manier avec précaution.</div>
+    <span class="expr-badge warn">Grossier</span>
+  </div>
+
+  <div class="expr">
+    <div class="expr-word">Babiche</div>
+    <div class="expr-fr">Lanière / Maigrichon</div>
+    <div class="expr-desc">À l'origine une lanière de cuir cru. Familièrement, quelqu'un de très maigre.</div>
+  </div>
+
+  <div class="expr">
+    <div class="expr-word">Bibitte</div>
+    <div class="expr-fr">Insecte / Bestiole</div>
+    <div class="expr-desc">Tout ce qui rampe, vole ou pique. « Y'a des bibittes partout en forêt. »</div>
+  </div>
+
+  <div class="expr">
+    <div class="expr-word">Chien-chaud</div>
+    <div class="expr-fr">Hot-dog</div>
+    <div class="expr-desc">Traduction littérale de hot-dog. Parfaitement compris dans tout le Québec.</div>
+  </div>
+
+  <div class="expr">
+    <div class="expr-word">Dépanneur</div>
+    <div class="expr-fr">Épicerie de proximité</div>
+    <div class="expr-desc">Le petit commerce du coin, ouvert tard, qui vend de tout. L'équivalent du tabac-épicerie français.</div>
+  </div>
+
+  <div class="expr">
+    <div class="expr-word">Gazer</div>
+    <div class="expr-fr">Faire le plein</div>
+    <div class="expr-desc">« Je vais gazer » = aller à la station-service mettre de l'essence.</div>
+  </div>
+
+  <div class="expr">
+    <div class="expr-word">Liqueur</div>
+    <div class="expr-fr">Soda / Boisson gazeuse</div>
+    <div class="expr-desc">Ne désigne pas l'alcool mais le soda. « Une liqueur » = un Coca, une limonade…</div>
+  </div>
+
+  <div class="expr">
+    <div class="expr-word">Maringouin</div>
+    <div class="expr-fr">Moustique</div>
+    <div class="expr-desc">Les maringouins sont légion en été au bord des lacs. Prévoir répulsif.</div>
+  </div>
+
+  <div class="expr">
+    <div class="expr-word">Tabarnak</div>
+    <div class="expr-fr">Juron (tabernacle)</div>
+    <div class="expr-desc">Le juron québécois par excellence. Exprime la surprise, la colère ou l'admiration selon le ton.</div>
+    <span class="expr-badge warn">Grossier</span>
+  </div>
+
+  <div class="expr">
+    <div class="expr-word">Avoir de la broue dans le toupet</div>
+    <div class="expr-fr">Être très occupé</div>
+    <div class="expr-desc">Littéralement : avoir de la mousse dans les cheveux. Être débordé, stressé, courir partout.</div>
+  </div>
+
+  <div class="expr">
+    <div class="expr-word">Passer la nuit sur la corde à linge</div>
+    <div class="expr-fr">Passer une nuit blanche</div>
+    <div class="expr-desc">Ne pas avoir dormi de la nuit. « J'ai passé la nuit sur la corde à linge à étudier. »</div>
+  </div>
+
+  <div class="expr">
+    <div class="expr-word">Niaiser avec le puck</div>
+    <div class="expr-fr">Perdre son temps</div>
+    <div class="expr-desc">Référence au hockey. Tergiverser, ne pas aller droit au but. « Arrête de niaiser avec le puck ! »</div>
+  </div>
+
+</div>
+
+</body>
+</html>

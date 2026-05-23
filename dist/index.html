@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Benarl Portfolio</title>
+  <title>Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/main.bundle.css">
@@ -12,18 +12,18 @@
 <body>
   <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <div class="navbar-item is-hidden-desktop">
-        <a href="https://github.com/Benarl" class="icon is-large has-text-light">
-          <i class="fab fa-2x fa-github"></i>
-        </a>
-      </div>
-      <div class="navbar-item is-hidden-desktop">
-        <a href="https://www.linkedin.com/in/benoit-arliaud-99b708b6" class="icon is-large has-text-light">
-          <i class="fab fa-2x fa-linkedin-in"></i>
-        </a>
-      </div>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
     </div>
-    <div class="navbar-menu">
+    <div id="navMenu" class="navbar-menu">
+      <div class="navbar-start">
+        <a href="index.html" class="navbar-item">Home</a>
+        <a href="projects.html" class="navbar-item">Projects</a>
+        <a href="experience.html" class="navbar-item">About</a>
+      </div>
       <div class="navbar-end">
         <div class="navbar-item">
           <a href="https://github.com/Benarl" class="icon is-large has-text-light">
@@ -39,522 +39,61 @@
 
   <section class="hero is-primary">
     <div class="hero-body" style="background-image: url(img/background4.jpg);">
-      <!-- <div class="hero-body" style="background-image: url(img/background4.png);"> -->
       <div class="container">
         <div class="level">
           <div class="level-item has-text-centered">
-            <figure class="image is-128x128">
-              <img class="is-rounded" src="img/me-big.jpg">
-            </figure>
           </div>
         </div>
         <div class="columns has-text-centered">
           <div class="column">
             <h1 class="title is-1">
-              Benoit Arliaud
+              Arbethi blog
             </h1>
-            <h2 class="subtitle">
-              Freelance Data
-            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="card">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4"><a href="quebec/index.html">Québec — 8 destinations incontournables</a></p>
+              <p class="subtitle is-6"><time datetime="2026-05">Mai 2026</time></p>
+            </div>
+          </div>
+          <div class="content">
             <p>
-              <a href="docs/resume.pdf" class="icon has-text-light">
-                <i class="fas fa-file-word"></i> <strong>Resume</strong>
-              </a>
+              Une carte interactive des lieux à ne pas manquer lors d'un voyage au Québec :
+              Québec ville, Montréal, la chute Montmorency, le fjord du Saguenay, la Mauricie,
+              la Gaspésie, Mont-Tremblant et le parc Oméga.
+              Chaque point sur la carte donne accès à une photo et une courte description.
             </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h1 class="title">About Me</h1>
-      <hr />
-      <p>I'm a data scientist working in the tech industry for 7 years.</p>
-      <p> I have worked in different area of AI such as
-        computer vision, nlp, time series, llm.</p>
-      <p>What i like doing is model design, data preprocess, model evaluation.</p>
-      <p>But i can also operate more widely i have good skills in development and MLOps.</p>
-      <p>I also like working on personal project related to AI and Maths.</p>
-      <p>I'm looking for a mission related to computer vision and deep learning where i could bring
-        the best of my skills.</p>
-      <p>Do not hesitate to contact me by mail or linkedin for any question.</p>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Experience</h1>
-      <hr />
-      <div class="card">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="img/nodya_group_logo.jpeg" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="media-content">
-              <p class="title is-4">Nodya Group</p>
-              <p class="subtitle is-6">Data scientist - Data Engineer <time datetime="2018-9">September 2018</time> -
-                <time datetime="2024-11">November 2024</time>
-              </p>
-            </div>
-          </div>
-          <div class="content">
-            <p>As a data consultant i worked on many AI use cases</p>
-            <ul>
-              <li>Data augmentation software</li>
-              <li>Sales forecast</li>
-              <li>Mails classification</li>
-              <li>Image recognition on aircraft part</li>
-            </ul>
             <div class="tags">
-              <span class="tag">python</span>
-              <span class="tag">llm</span>
-              <span class="tag">sklearn</span>
-              <span class="tag">elastic-search</span>
-              <span class="tag">docker</span>
-              <span class="tag">keras</span>
-              <span class="tag">deep learning</span>
+              <span class="tag">voyage</span>
+              <span class="tag">canada</span>
+              <span class="tag">carte interactive</span>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="card card-gap">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="img/sogeti_high_tech_logo.jpeg" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="media-content">
-              <p class="title is-4">Sogeti High Tech</p>
-              <p class="subtitle is-6">Software Engineer - <time datetime="2017-3">March 2017</time> - <time
-                  datetime="2018-7">July 2018</time></p>
-            </div>
-          </div>
-          <div class="content">
-            <p>Development of 3D simulation with Unity3D to replicate the behavior of an urban subway.</p>
-            <div class="tags">
-              <span class="tag">c#</span>
-              <span class="tag">Unity3D</span>
-            </div>
+            <a href="quebec/index.html" class="button is-primary is-small">Voir la carte</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Projects</h1>
-      <hr />
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-12">
-          <div class="tile">
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Leap motion goalkeeper</p>
-                <figure class="image is-3by2">
-                  <img class="modal-trigger" data-target="project-1-modal" src="img/goalkeeper.gif">
-                </figure>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <a href="https://www.shadertoy.com/view/Dl3yRH">
-                  <p class="title">Differential equation</p>
-                  <figure class="image is-4by3">
-                    <img class="modal-trigger" data-target="project-2-modal" src="img/pde.gif">
-                  </figure>
-                </a>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Torus billard trajectory</p>
-                <a href="https://www.shadertoy.com/view/4XsfRN">
-                  <figure class="image is-4by3">
-                    <img class="modal-trigger" data-target="project-3-modal" src="img/torus.gif">
-                  </figure>
-                </a>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-12">
-          <div class="tile">
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Maths Video : Logical Perceptron</p>
-                <iframe width="300" height="225" src="https://www.youtube.com/embed/922pNllF4aw?si=ReH2B6ksGJVqzn5O"
-                  title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <!-- <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-4-modal" src="img/logical_perceptron.jpg">
-                </figure> -->
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Maths Video : Lissajous Curves</p>
-                <!-- <figure class="image is-4by3"> -->
-                <iframe width="300" height="225" src="https://www.youtube.com/embed/3auIrZv5Wtc?si=F3PHYU-hQNI8eItC"
-                  title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <!-- <img class="modal-trigger" data-target="project-5-modal" src="img/lissajous_curves.jpg"> -->
-                <!-- </figure> -->
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Maths Video : Diagonal Argument</p>
-                <iframe width="300" height="225" src="https://www.youtube.com/embed/7N3iKB0OnOs?si=VSfhZs_wePuE1tqL"
-                  title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <!-- <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-5-modal" src="img/diagonal_argument.jpg"> -->
-                </figure>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Education / Training</h1>
-      <hr />
-      <div class="card">
-        <div class="card-content">
-          <div class="content">
-            <p class="title is-4">Polytech Nice Sophia</p>
-            <p class="subtitle is-6"><time datetime="2014-9">September 2014</time> - <time datetime="2017-9">September
-                2017</time></p>
-          </div>
-          <div class="content">
-            Degree in Applied Mathematics Engineering
-            <ul>
-              <li>Machine Learning : Neural Network, Random Tree Forest, Logistic Regression, SVM, Kmeans.</li>
-              <li>Applied Mathematics : Optimisation, Modelling, Statistics, Signal Processing.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="card card-gap">
-        <div class="card-content">
-          <div class="content">
-            <p class="title is-4">Scientific preparatory class</p>
-            <p class="subtitle is-6"><time datetime="2012-9">September 2012</time> - <time datetime="2014-7">July
-                2014</time></p>
-          </div>
-          <div class="content">
-            Program : MP - MPSI
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Contact</h1>
-      <hr />
-      <nav class="level">
-        <div class="level-item has-text-centered">
-          <div>
-            <a href="https://github.com/Benarl" class="icon is-large">
-              <i class="fab fa-2x fa-github"></i>
-            </a>
-            <p class="heading"><a href="https://github.com/Benarl">github.com/Benarl</a></p>
-          </div>
-        </div>
-        <div class="level-item has-text-centered">
-          <div>
-            <a href="https://www.linkedin.com/in/benoit-arliaud-99b708b6" class="icon is-large">
-              <i class="fab fa-2x fa-linkedin-in"></i>
-            </a>
-            <p class="heading"><a href="https://www.linkedin.com/in/benoit-arliaud-99b708b6">linkedin</a></p>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </section>
-
-  <!-- Modals -->
-  <!-- <div id="project-1-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-
-        <div id="project-1-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
-          </figure>
-        </div>
-
-        <div class="content">
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
-
-          <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
-          </div>
-
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-  <div id="project-2-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-
-        <div id="project-2-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
-          </figure>
-        </div>
-
-        <div class="content">
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
-
-          <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
-          </div>
-
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-  <div id="project-3-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <div id="project-3-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
-          </figure>
-        </div>
-
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
-          <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
-          </div>
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-  <div id="project-4-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <div id="project-4-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
-          </figure>
-        </div>
-
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
-          <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
-          </div>
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-  <div id="project-5-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <div id="project-5-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
-          </figure>
-        </div>
-
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
-          <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
-          </div>
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-  <div id="project-6-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <div id="project-6-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
-          </figure>
-        </div>
-
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
-          <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
-          </div>
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div> -->
-
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-        <a href="https://github.com/mmacneil/devfolio" target="_blank" class="icon has-text-primary">
-          <i class="fab fa-github"></i> <strong>devfolio</strong></a>
-      </p>
-    </div>
-  </footer>
-
-  <script src="js/bundle.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const burger = document.querySelector('.navbar-burger');
+      const menu = document.getElementById(burger.dataset.target);
+      burger.addEventListener('click', () => {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+      });
+    });
+  </script>
 </body>
 
 </html>
