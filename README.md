@@ -1,1 +1,1 @@
-[https](https://arbethi.github.io/index.html)
+[https](https://arbethi.github.io/dist/index.html)
