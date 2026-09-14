@@ -1,36 +1,32 @@
-import { getPostBySlug, getPostSlugs } from '../utils';
+import { getPostBySlug, getPostSlugs } from '../../blog/utils';
 import type { Metadata } from 'next';
-
 import { Title } from '@/components/Title';
 import { renderMarkdown } from '../markdown';
-type Params = {
-  slug: string;
-};
+
+type Params = { slug: string };
 
 export async function generateStaticParams() {
   const slugs = getPostSlugs();
-  
-  // ✅ Filtre les slugs vides et retire l'extension .md
+  console.log("📁 Slugs trouvés:", slugs);
+
   return slugs
-    .map((file) => file.replace(/\.md$/, ''))
+    .map((file) => {
+      const slug = file.replace(/\.md$/, '');
+      if (!slug) console.error("❌ Slug vide pour le fichier:", file);
+      return slug;
+    })
     .filter((slug) => slug && slug.trim() !== '')
-    .map((slug) => ({
-      slug,  // ✅ Structure attendue par Next.js avec output: "export"
-    }));
+    .map((slug) => ({ slug }));
 }
+
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { meta } = getPostBySlug(params.slug);
-  return {
-    title: meta.title,
-    description: meta.description,
-  };
+  return { title: meta.title, description: meta.description };
 }
 
 export default async function BlogPost({ params }: { params: Params }) {
-  const { slug } = params;
-
-  const { meta, content: Content } = await getPostBySlug(slug);
-  const mdxSource = await renderMarkdown(Content);
+  const { meta, content } = getPostBySlug(params.slug);
+  const mdxSource = await renderMarkdown(content);
 
   return (
     <div>
