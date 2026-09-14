@@ -1,27 +1,39 @@
 {
-  "name": "devfolio",
-  "version": "1.5.0",
-  "description": "A simple, responsive, single-page portfolio and resume for developers built with Bulma, Sass, Font Awesome and Flickity.",
-  "main": "webpack.config.js",
-  "repository": "https://github.com/mmacneil/devfolio",
-  "author": "Mark Macneil",
-  "license": "MIT",
+  "name": "arbethi.github.io",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "build": "webpack --mode production"
-  },
-  "devDependencies": {
-    "bulma": "^0.9.3",
-    "css-loader": "^6.3.0",
-    "css-minimizer-webpack-plugin": "^3.0.2",
-    "mini-css-extract-plugin": "^2.3.0",
-    "node-sass": "^7.0.0",
-    "sass-loader": "^12.1.0",
-    "style-loader": "^3.3.0",
-    "webpack": "^5.76.0",
-    "webpack-cli": "^4.8.0"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
   },
   "dependencies": {
-    "flickity": "^2.2.2",
-    "flickity-imagesloaded": "^2.0.0"
+    "@mdx-js/react": "^3.1.1",
+    "@tailwindcss/typography": "^0.5.20",
+    "gray-matter": "^4.0.3",
+    "next": "16.3.5",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "rehype-autolink-headings": "^7.1.0",
+    "rehype-pretty-code": "^0.14.5",
+    "rehype-slug": "^6.0.0",
+    "rehype-stringify": "^10.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.2",
+    "sass": "^1.104.1",
+    "server-only": "^0.0.1",
+    "unified": "^11.0.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.5",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
