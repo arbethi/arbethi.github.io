@@ -17,11 +17,7 @@ export function getPostSlugs() {
 export function getPostBySlug(slug: string) {
   if (!slug) {
     // ✅ Retourne un article vide au lieu de planter
-    return {
-      slug: '',
-      meta: { title: 'Article introuvable', date: '', coverImage: '' },
-      content: '# Article introuvable'
-    };
+    throw new Error('Article introuvable');
   }
   const realSlug = slug.replace(/\.md$/, '');
   const fullPath = path.join(postsDirectory, `${realSlug}.md`);
@@ -30,14 +26,12 @@ export function getPostBySlug(slug: string) {
   }
 
   const fileContents = fs.readFileSync(fullPath, 'utf8');
-  
+
   const { data, content } = matter(fileContents);
   return { slug: realSlug, meta: data, content };
 }
-
 export function getAllPosts() {
-  const slugs = getPostSlugs();
-  return slugs
-    .map(slug => getPostBySlug(slug.replace(/\.md$/, '')))
-    .sort((a, b) => new Date(b.meta.date) > new Date(a.meta.date) ? 1 : -1);
+  const posts = getPostSlugs().map(slug => getPostBySlug(slug)).sort((a, b) => new Date(b.meta.date) > new Date(a.meta.date) ? 1 : -1);
+  console.log("📖 Posts:", posts.map(p => p.slug));
+  return posts;
 }
