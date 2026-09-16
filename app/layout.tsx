@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "Arbethi Blog",
   description: "",
   icons: {
-    icon: '/favicon.ico'
+    icon: '/favicon.png'
   }
 };
 
@@ -27,8 +27,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+      <link rel="icon" href="/favicon.png" type="image/png" />
+      <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       <body className="min-h-full flex flex-col">
 
         <Navbar />
